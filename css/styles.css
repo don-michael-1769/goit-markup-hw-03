@@ -242,7 +242,7 @@ row-gap: 48px;
 }
 .portfolio-item{
     width: calc((100%-24px*5)/6);
-    background-color: rgb(158, 135, 179);
+    /* background-color: rgb(158, 135, 179); */
     margin: auto;
     width: 360px;
     height: 420px;
