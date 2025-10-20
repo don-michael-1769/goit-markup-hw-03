@@ -7,23 +7,76 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+/* Reset start */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
 
-ul li {
+ul,
+ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
     text-decoration: none;
+    color: currentColor;
 }
+
+img {
+    display: block;
+}
+.container {
+    max-width: 1440px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section {
+ padding: 120px 0;
+}
+
+.header{
+padding: 24px 0;
+}
+
+.header-container{
+display: flex;
+align-items: center;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.nav .logo{
+display: flex;
+margin-right: 76px;
+}
+
 
 .menu{
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        display: flex;
+        gap:40px;
+        margin-right: 332px;
 }
 .menu-link{
     color:#2e2f42;
+    padding: 24px 0;
 }
 
 .menu-link:hover,
@@ -31,10 +84,10 @@ a {
     color: #404bbf;
 }
 .contacts{
-    font-style: normal
+    font-style: normal;
 }
 
- .contacts-item{
+.contacts-item{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -42,7 +95,11 @@ a {
     color: inherit;
     font-style: normal;
     color: #434455;
-}
+   }
+.contacts-list {
+    display: flex;
+    gap: 40px;
+ }
 
 .contacts-item:hover,
 .contacts-item:focus
@@ -51,8 +108,11 @@ a {
 }
 .hero{
     background-color: #2E2F42;
-}
-
+    width: 1440px;
+    margin: 0 auto;
+    padding: 188px 40px 40px;
+       }
+    
 .hero-title{
         font-weight: 700;
         font-size: 56px;
@@ -60,6 +120,8 @@ a {
         letter-spacing: 0.02em;
         text-align: center;
         color: white;
+        width: 496px;
+        margin: 0 472px 48px;
 }
 
 .button {
@@ -70,6 +132,9 @@ a {
     color:white;
     cursor:pointer;
     background:#4D5AE5;
+    margin: 0 635px 188px;
+    width: 169px;
+    height: 56px;
 }
 .button:hover,
 .button:focus{
@@ -78,13 +143,22 @@ a {
 
 .features-list{
     background-color: #FFFFFF;
+    display: flex;
+    margin: 120px 156px 120px;
+    gap: 24px;
+    justify-content: center;
+    width: 1128px;
+}
+.features-item{
+    width: 264px;
 }
 .features-subtitle{
-        font-weight:500;
-        font-size:20px;
-        line-height:1.2;
-        letter-spacing:0.02em;
-        color:#2E2F42;
+    margin-bottom: 8px;
+    font-weight:500;
+    font-size:20px;
+    line-height:1.2;
+    letter-spacing:0.02em;
+    color:#2E2F42;
 }
 
 .features-text{
@@ -96,8 +170,11 @@ a {
 }
 
 .team{
-    background-color: #F4F4FD;
+background-color: #F4F4FD;
+width: 1440px;
+margin: 120px auto;
 }
+
 .team-title{
         font-weight:700;
         font-size:36px;
@@ -106,9 +183,21 @@ a {
         text-align: center;
         text-transform: capitalize;
         color:#2E2F42;
+        margin: auto;
+        padding-top: 120px;
+    }
+.team-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+    margin: 72px 156px 0;
 }
 .team-item{
     background-color:#FFFFFF;
+    width: 264px;
+    height: 380px;
+    margin-bottom: 120px;
 }
 .team-member-name{
         font-weight: 500;
@@ -130,6 +219,8 @@ a {
 
 .portfolio{
     background-color: #F4F4FD;
+    margin: 0 auto 120px;
+    max-width: 1440px;
 }
 .portfolio-title{
         font-weight:700;
@@ -139,10 +230,22 @@ a {
         text-align:center;
         text-transform: capitalize;
         color:#2E2F42;
-}
+        margin: 0 auto 72px;
+     }
 
 .portfolio-list{
 background-color: #FFFFFF;
+display: flex;
+flex-wrap: wrap;
+gap: 24px;
+row-gap: 48px;
+}
+.portfolio-item{
+    width: calc((100%-24px*5)/6);
+    background-color: rgb(158, 135, 179);
+    margin: auto;
+    width: 360px;
+    height: 420px;
 }
 
 .portfolio-name{
@@ -163,14 +266,20 @@ background-color: #FFFFFF;
 
 footer{
     background:#2E2F42;
+    margin: 0px auto;
+    max-width: 1440px;
+  }
+.footer-container{
+    padding: 100px 1020px 100px 156px;
+    margin: 0 auto;
 }
-
 .footer-text{
         font-weight:400;
         font-size:16px;
         line-height:1.5;
         letter-spacing: 0.02em;
         color:#F4F4FD;
+        margin-top: 16px;
 }
 
 .logo {
