@@ -157,8 +157,8 @@ img {
     border: 0;
     padding: 0;
     white-space: nowrap;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
+    clip-path: inset(100%);
+    clip: rect(0, 0, 0, 0);
     overflow: hidden;
 }
 
@@ -224,7 +224,14 @@ padding: 120px 0 120px
     margin-bottom: 120px;
     padding: 32px 0 32px;
     border-radius: 0px 0px 4px 4px;
+    
+}
+.team-member{
     width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+.member{
+    padding: 32px 0;
 }
 .team-member-name{
         font-weight: 500;
