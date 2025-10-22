@@ -45,8 +45,7 @@ img {
 }
 
 .header{
-    padding: 24px 0;
-    border-bottom: 1px solid #e7e9fc;
+     border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container{
@@ -58,11 +57,11 @@ img {
 .nav{
     display: flex;
     align-items: center;
-    margin-right: auto;
 }
 
 .nav .logo{
     display: flex;
+    padding: 24px 0;
     margin-right: 76px;
 }
 
@@ -74,9 +73,10 @@ img {
         letter-spacing: 0.02em;
         display: flex;
         gap:40px;
-        margin-right: 332px;
     }
+
     .menu-link{
+        display: block;
         color:#2e2f42;
         padding: 24px 0;
     }
@@ -87,9 +87,12 @@ img {
     }
     .contacts{
         font-style: normal;
+        margin-left: auto;
     }
     
     .contacts-item{
+        display: block;
+        padding: 24px 0;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
@@ -100,6 +103,7 @@ img {
     }
     .contacts-list {
         display: flex;
+        align-items: center;
         gap: 40px;
     }
     
@@ -110,7 +114,6 @@ img {
     }
     .hero{
         background-color: #2E2F42;
-        width: 1440px;
         margin: 0 auto;
         padding: 188px 0 188px;
     }
@@ -123,10 +126,10 @@ img {
         text-align: center;
         color: white;
         max-width: 496px;
-        margin: 0 auto 48px; 
+        margin: 188px auto 48px; 
 }
 
-.button {
+    .button {
     font-family:"Roboto",sans-serif;
     font-weight:500;
     line-height:1.5;
@@ -291,7 +294,6 @@ margin: auto;
 .portfolio-item{
     justify-content: space-between;
     width: calc((100% - 48px) / 3);
-    /* background-color: rgb(158, 135, 179); */
     width: 360px;
     height: 420px;  
     text-align: center;
